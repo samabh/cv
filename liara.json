@@ -1,0 +1,9 @@
+{
+  "platform": "django",
+  "app": "samabahlouli",
+  "port": 8000,
+  "django_settings_module": "your_project_name.settings",
+  "build": {
+    "command": "pip install -r requirements.txt && python manage.py collectstatic --noinput"
+  }
+}

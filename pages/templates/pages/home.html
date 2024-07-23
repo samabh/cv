@@ -1,0 +1,206 @@
+{% extends '_base.html' %}
+{% load static %}
+{% block page_title %}
+samabahlouli
+{% endblock %}
+{% block content %}
+ <div class="container">
+        <div class="left-section">
+            <div class="about-me">
+                <img src="{% static 'img/2.png'%}">
+                <h1>ABOUT ME</h1>
+            </div>
+            <p>Quality and Creativity in Every Pixel</p>
+            <p>Let’s work together</p>
+        </div>
+        <div class="right-section">
+            <p>Welcome to my portfolio! I am a versatile web developer with expertise in building comprehensive websites
+                from scratch, encompassing both front-end and back-end development. My services extend to custom UI/UX
+                design, unique logos, and personalized banners tailored to your site's needs. For clients seeking a more
+                budget-friendly option, I also offer website creation using WordPress, ensuring both quality and
+                affordability. My language proficiency includes German, English, Persian, and Turkish, allowing me to
+                cater to a diverse range of clients.</p>
+        </div>
+    </div>
+<div class="skills">
+    <div class="title">
+        <img src="{% static 'img/2.png'%}">
+        <h1>skills</h1>
+    </div>
+    <div class="skills-img">
+        <figure>
+            <img src="{% static 'img/CSS.png'%}">
+        </figure>
+    </div>
+    <div class="gallery">
+        <div class="gallery-row">
+            <div class="gallery-item">
+                <div class="square"><img src="{% static 'img/sss.png'%}" alt="عکس 1"></div>
+                <div class="overlay">
+                    <div class="icon"><img src="{% static 'img/django.png'%}"></div>
+                    <p>Django is a high-level Python web framework that encourages rapid development and clean,
+                        pragmatic design.Django includes many features that help speed up the development process and
+                        Django is used by some of the largest websites in the world</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="square"><img src="{% static 'img/sss.png'%}" alt="عکس 2"></div>
+                <div class="overlay">
+                    <div class="icon"><img src="{% static 'img/wordpress.png'%}"></div>
+                    <p>WordPress is a popular content management system (CMS) known for its flexibility and ease of use.
+                        It's an excellent choice for anyone looking to create a website without breaking the bank.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="square"><img src="{% static 'img/sss.png'%}" alt="عکس 3"></div>
+                <div class="overlay">
+                    <div class="icon"><img src="{% static 'img/figma.png'%}"></div>
+                    <p> Figma is a powerful, cloud-based design tool that is transforming the way designers collaborate.
+                        It offers a range of features that make it an essential tool for modern web and app design</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-row">
+            <div class="gallery-item">
+                <div class="square"><img src="{% static 'img/sss.png'%}" alt="عکس 4"></div>
+                <div class="overlay">
+                    <div class="icon"><img src="{% static 'img/canva.png'%}"></div>
+                    <p>Canva is a robust web-based design platform that offers a wide range of tools and resources for
+                        creating various graphic designs.I use Canva to design the chicest logos and banners, ensuring
+                        each design reflects sophistication and style.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="square"><img src="{% static 'img/sss.png'%}" alt="عکس 5"></div>
+                <div class="overlay">
+                    <div class="icon"><img src="{% static 'img/html.png'%}"></div>
+                    <p>HTML (HyperText Markup Language) is the standard markup language used to create and structure
+                        content on the web. HTML works seamlessly with CSS (Cascading Style Sheets) to enhance the
+                        appearance and functionality of web pages.</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <div class="square"><img src="{% static 'img/sss.png'%}" alt="عکس 6"></div>
+                <div class="overlay">
+                    <div class="icon"><img src="{% static "img/css1.png"%}"></div>
+                    <p>CSS (Cascading Style Sheets) is the language used to style the appearance of web pages.CSS is
+                        crucial for creating visually appealing, user-friendly web experiences by transforming HTML
+                        elements into well-designed layouts that enhance usability and engagement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <h1>simple questions</h1>
+
+    <div class="table-container">
+        <div class="left-table">
+            <table>
+                <tr class="question-row">
+                    <td>how can i place an order?</td>
+                    <td class="icon" onclick="toggleAnswer(1)">+</td>
+                </tr>
+                <tr class="answer-row" id="answer1">
+                    <td colspan="2">پاسخ سوال 1</td>
+                </tr>
+                <tr class="question-row">
+                    <td>سوال 2</td>
+                    <td class="icon" onclick="toggleAnswer(2)">+</td>
+                </tr>
+                <tr class="answer-row" id="answer2">
+                    <td colspan="2">پاسخ سوال 2</td>
+                </tr>
+                <tr class="question-row">
+                    <td>سوال 3</td>
+                    <td class="icon" onclick="toggleAnswer(3)">+</td>
+                </tr>
+                <tr class="answer-row" id="answer3">
+                    <td colspan="2">پاسخ سوال 3</td>
+                </tr>
+            </table>
+        </div>
+        <div class="table-container">
+            <div class="right-table">
+                <table>
+                    <tr class="question-row">
+                        <td>how can i place an order?</td>
+                        <td class="icon" onclick="toggleAnswer(1)">+</td>
+                    </tr>
+                    <tr class="answer-row" id="answer4">
+                        <td colspan="2">پاسخ سوال 1</td>
+                    </tr>
+                    <tr class="question-row">
+                        <td>سوال 2</td>
+                        <td class="icon" onclick="toggleAnswer(2)">+</td>
+                    </tr>
+                    <tr class="answer-row" id="answer5">
+                        <td colspan="2">پاسخ سوال 2</td>
+                    </tr>
+                    <tr class="question-row">
+                        <td>سوال 3</td>
+                        <td class="icon" onclick="toggleAnswer(3)">+</td>
+                    </tr>
+                    <tr class="answer-row" id="answer6">
+                        <td colspan="2">پاسخ سوال 3</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="touch">
+    <div class="title">
+        <img src="{% static "img/2.png"%}">
+        <h1>Get In Touch</h1>
+    </div>
+    <div class="contact-container">
+        <img src="{% static "img/top.png"%}" alt="HeaderImage" class="header-img">
+        <div class="contact-content">
+            <div class="contact-info">
+                <p>Feel free to get in touch with me. I am always open to discussing new projects, creating ideas, or
+                    opportunities to be part of your vision.</p>
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                    <span>email me: samabh1377@gmail.com</span>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>call me: 0935929508</span>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form method="post" action="{% url 'form_submit' %}">
+                 {% csrf_token %}
+                    <input type="text" placeholder="name and lastname" id="name" name="name">
+                    <input type="email" placeholder="email" id="email" name="email">
+                    <textarea placeholder="message" name="message"></textarea>
+                <button type="submit">send your message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="steps">
+    <figure>
+        <img src="{% static 'img/4%20easy%20steps%20to%20boost.png' %}">
+    </figure>
+</div>
+<div class="title">
+    <img src="{% static 'img/2.png'%}">
+    <h1>portfolio</h1>
+</div>
+        <div class="project-grid">
+        {% for project in projects %}
+        <div class="project-item">
+            <a href="{{ project.url }}">
+                <img src="{{ project.image.url }}" alt="{{ project.title }}">
+                <div class="project-content">
+                    <h3>{{ project.title }}</h3>
+                    <p>{{ project.description }}</p>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+{% endblock content %}
+
